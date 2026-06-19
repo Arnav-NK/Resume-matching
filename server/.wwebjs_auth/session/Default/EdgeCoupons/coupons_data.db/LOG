@@ -1,0 +1,6 @@
+2026/06/19-21:13:48.541 4e9c Reusing MANIFEST C:\Users\arnav\OneDrive\Desktop\ANU\project\Resume-matching\server\.wwebjs_auth\session\Default\EdgeCoupons/coupons_data.db/MANIFEST-000001
+2026/06/19-21:13:48.542 4e9c Recovering log #14
+2026/06/19-21:13:48.542 4e9c Reusing old log C:\Users\arnav\OneDrive\Desktop\ANU\project\Resume-matching\server\.wwebjs_auth\session\Default\EdgeCoupons/coupons_data.db/000014.log 
+2026/06/19-21:13:48.630 45a8 Level-0 table #18: started
+2026/06/19-21:13:48.634 45a8 Level-0 table #18: 682784 bytes OK
+2026/06/19-21:13:48.639 45a8 Delete type=0 #14

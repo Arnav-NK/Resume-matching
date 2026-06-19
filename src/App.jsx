@@ -10,6 +10,7 @@ import ResultsSection from './components/ResultsSection';
 import HistoryPanel from './components/HistoryPanel';
 import Footer from './components/Footer';
 import ToastContainer from './components/ToastContainer';
+import JobAlertsSection from './components/JobAlertsSection';
 import './index.css';
 
 function AppContent() {
@@ -41,6 +42,7 @@ function AppContent() {
         <UploadSection />
         <JDSection />
         <AnalyzeSection />
+        <JobAlertsSection />
         <LoadingOverlay />
         <ResultsSection />
       </main>
