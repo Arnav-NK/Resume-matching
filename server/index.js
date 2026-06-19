@@ -49,6 +49,9 @@ client.on('qr', (qr) => {
     console.log('\n==================================================================');
     console.log('SCAN THIS QR CODE WITH YOUR WHATSAPP MOBILE APP TO LOGIN:');
     qrcode.generate(qr, { small: true });
+    console.log('\nIf the QR code above is distorted in the Render logs, CLICK THE LINK BELOW TO VIEW IT IN YOUR BROWSER:');
+    const qrImageUrl = `https://api.qrserver.com/v1/create-qr-code/?size=400x400&data=${encodeURIComponent(qr)}`;
+    console.log(qrImageUrl);
     console.log('==================================================================\n');
 });
 
