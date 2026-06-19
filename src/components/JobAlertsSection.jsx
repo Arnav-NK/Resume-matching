@@ -9,7 +9,11 @@ export default function JobAlertsSection() {
     try {
       setLoading(true);
       const apiUrl = import.meta.env.VITE_API_URL ? `${import.meta.env.VITE_API_URL}/api/jobs` : 'http://localhost:3001/api/jobs';
-      const response = await fetch(apiUrl);
+      const response = await fetch(apiUrl, {
+        headers: {
+          'ngrok-skip-browser-warning': 'true'
+        }
+      });
       if (!response.ok) {
         throw new Error('Failed to fetch jobs');
       }
