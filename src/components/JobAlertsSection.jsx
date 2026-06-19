@@ -8,7 +8,8 @@ export default function JobAlertsSection() {
   const fetchJobs = async () => {
     try {
       setLoading(true);
-      const response = await fetch('http://localhost:3001/api/jobs');
+      const apiUrl = import.meta.env.VITE_API_URL ? `${import.meta.env.VITE_API_URL}/api/jobs` : 'http://localhost:3001/api/jobs';
+      const response = await fetch(apiUrl);
       if (!response.ok) {
         throw new Error('Failed to fetch jobs');
       }

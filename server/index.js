@@ -40,7 +40,7 @@ const client = new Client({
     authStrategy: new LocalAuth(),
     puppeteer: {
         headless: true,
-        executablePath: 'C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe',
+        executablePath: process.env.NODE_ENV === 'production' ? undefined : 'C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe',
         args: ['--no-sandbox', '--disable-setuid-sandbox']
     }
 });
